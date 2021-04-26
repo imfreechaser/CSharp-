@@ -24,3 +24,16 @@ C:\Users\RayData\source\repos\CSharp-Practice\必备知识点_控制台相关\ob
 C:\Users\RayData\source\repos\CSharp-Practice\必备知识点_控制台相关\obj\Debug\netcoreapp3.1\必备知识点_控制台相关.dll
 C:\Users\RayData\source\repos\CSharp-Practice\必备知识点_控制台相关\obj\Debug\netcoreapp3.1\必备知识点_控制台相关.pdb
 C:\Users\RayData\source\repos\CSharp-Practice\必备知识点_控制台相关\obj\Debug\netcoreapp3.1\必备知识点_控制台相关.genruntimeconfig.cache
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\bin\Debug\netcoreapp3.1\必备知识点_控制台相关.exe
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\bin\Debug\netcoreapp3.1\必备知识点_控制台相关.deps.json
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\bin\Debug\netcoreapp3.1\必备知识点_控制台相关.runtimeconfig.json
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\bin\Debug\netcoreapp3.1\必备知识点_控制台相关.runtimeconfig.dev.json
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\bin\Debug\netcoreapp3.1\必备知识点_控制台相关.dll
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\bin\Debug\netcoreapp3.1\必备知识点_控制台相关.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\obj\Debug\netcoreapp3.1\必备知识点_控制台相关.csprojAssemblyReference.cache
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\obj\Debug\netcoreapp3.1\必备知识点_控制台相关.AssemblyInfoInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\obj\Debug\netcoreapp3.1\必备知识点_控制台相关.AssemblyInfo.cs
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\obj\Debug\netcoreapp3.1\必备知识点_控制台相关.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\obj\Debug\netcoreapp3.1\必备知识点_控制台相关.dll
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\obj\Debug\netcoreapp3.1\必备知识点_控制台相关.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_控制台相关\obj\Debug\netcoreapp3.1\必备知识点_控制台相关.genruntimeconfig.cache

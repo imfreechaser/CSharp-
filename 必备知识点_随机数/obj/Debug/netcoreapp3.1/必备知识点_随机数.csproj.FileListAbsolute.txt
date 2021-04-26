@@ -1,0 +1,13 @@
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\bin\Debug\netcoreapp3.1\必备知识点_随机数.exe
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\bin\Debug\netcoreapp3.1\必备知识点_随机数.deps.json
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\bin\Debug\netcoreapp3.1\必备知识点_随机数.runtimeconfig.json
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\bin\Debug\netcoreapp3.1\必备知识点_随机数.runtimeconfig.dev.json
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\bin\Debug\netcoreapp3.1\必备知识点_随机数.dll
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\bin\Debug\netcoreapp3.1\必备知识点_随机数.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\obj\Debug\netcoreapp3.1\必备知识点_随机数.csprojAssemblyReference.cache
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\obj\Debug\netcoreapp3.1\必备知识点_随机数.AssemblyInfoInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\obj\Debug\netcoreapp3.1\必备知识点_随机数.AssemblyInfo.cs
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\obj\Debug\netcoreapp3.1\必备知识点_随机数.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\obj\Debug\netcoreapp3.1\必备知识点_随机数.dll
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\obj\Debug\netcoreapp3.1\必备知识点_随机数.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\必备知识点_随机数\obj\Debug\netcoreapp3.1\必备知识点_随机数.genruntimeconfig.cache

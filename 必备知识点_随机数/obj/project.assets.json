@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Erina\\source\\repos\\CSharp-Practice\\必备知识点_控制台相关\\必备知识点_控制台相关.csproj",
-      "projectName": "必备知识点_控制台相关",
-      "projectPath": "C:\\Users\\Erina\\source\\repos\\CSharp-Practice\\必备知识点_控制台相关\\必备知识点_控制台相关.csproj",
+      "projectUniqueName": "C:\\Users\\Erina\\source\\repos\\CSharp-Practice\\必备知识点_随机数\\必备知识点_随机数.csproj",
+      "projectName": "必备知识点_随机数",
+      "projectPath": "C:\\Users\\Erina\\source\\repos\\CSharp-Practice\\必备知识点_随机数\\必备知识点_随机数.csproj",
       "packagesPath": "C:\\Users\\Erina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Erina\\source\\repos\\CSharp-Practice\\必备知识点_控制台相关\\obj\\",
+      "outputPath": "C:\\Users\\Erina\\source\\repos\\CSharp-Practice\\必备知识点_随机数\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Erina\\AppData\\Roaming\\NuGet\\NuGet.Config",
