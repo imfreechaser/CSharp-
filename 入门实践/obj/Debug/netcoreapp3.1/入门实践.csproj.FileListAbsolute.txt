@@ -11,3 +11,16 @@ C:\Users\Erina\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1
 C:\Users\Erina\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1\入门实践.dll
 C:\Users\Erina\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1\入门实践.pdb
 C:\Users\Erina\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1\入门实践.genruntimeconfig.cache
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\bin\Debug\netcoreapp3.1\入门实践.exe
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\bin\Debug\netcoreapp3.1\入门实践.deps.json
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\bin\Debug\netcoreapp3.1\入门实践.runtimeconfig.json
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\bin\Debug\netcoreapp3.1\入门实践.runtimeconfig.dev.json
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\bin\Debug\netcoreapp3.1\入门实践.dll
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\bin\Debug\netcoreapp3.1\入门实践.pdb
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1\入门实践.csprojAssemblyReference.cache
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1\入门实践.AssemblyInfoInputs.cache
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1\入门实践.AssemblyInfo.cs
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1\入门实践.csproj.CoreCompileInputs.cache
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1\入门实践.dll
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1\入门实践.pdb
+C:\Users\RayData\source\repos\CSharp-Practice\入门实践\obj\Debug\netcoreapp3.1\入门实践.genruntimeconfig.cache
