@@ -111,7 +111,62 @@ namespace 入门实践
 
                     case 2:
                         Console.Clear();
-                        Console.WriteLine("游戏场景");
+
+                        #region 不变的红墙
+
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        //int widthAmount = width / 2;
+
+                        for (int i = 0; i <= width - 2; i+=2)
+                        {
+                            //最上方的墙
+                            Console.SetCursorPosition(i, 0);
+                            Console.Write("■");
+                            //中间的墙
+                            Console.SetCursorPosition(i, height - 6);
+                            Console.Write("■");
+                            //底部的墙
+                            Console.SetCursorPosition(i, height - 1);
+                            Console.Write("■");
+                        }
+                        for (int i = 0; i < height - 1; i++)
+                        {
+                            //左边的墙
+                            Console.SetCursorPosition(0, i);
+                            Console.WriteLine("■");
+                            //右边的墙
+                            Console.SetCursorPosition(width - 2, i);
+                            Console.Write("■");
+                        }
+
+                        #endregion
+
+                        #region Boss属性相关
+
+                        //boss位置
+                        int bossX = 24, bossY = 15;
+                        //boss攻击力
+                        int bossAtkMin = 7, bossAtkMax = 13;
+                        //血量
+                        int bossHp = 100;
+                        //boss图标
+                        string bossIcon = "■";
+                        //boss颜色
+                        ConsoleColor bossColor = ConsoleColor.Green;
+
+                        #endregion
+
+                        while (true)
+                        {
+                            if(bossHp > 0)
+                            {
+                                //绘制boss图标
+                                Console.SetCursorPosition(bossX, bossY);
+                                Console.ForegroundColor = bossColor;
+                                Console.Write(bossIcon);
+                            }
+
+                        }
                         break;
                     case 3:
                         Console.Clear();
