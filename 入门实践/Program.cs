@@ -18,11 +18,38 @@ namespace 入门实践
             #region 设置多个场景
 
             int instantSceneID = 1;//1开始场景 2游戏场景 3结束场景
+            //开始场景
             char inputDirection;
-            //bool isEnterDown = false;
-            //int buttonX = 20, buttonY = 12;
             int buttonId = 0;
             bool isQuit = false;
+
+            #region 玩家属性相关
+
+            int playerAtkMin = 8;
+            int playerAtkMax = 12;
+            int HeroPosX = 6, HeroPosY = 5;
+            int playerHp = 100;
+            string playerIcon = "●";
+            char moveInput;
+            ConsoleColor HeroColor = ConsoleColor.Yellow;
+            int LasPosX = 0, LasPosY = 0;
+
+            #endregion
+
+            #region Boss属性相关
+
+            //boss位置
+            int bossX = 24, bossY = 15;
+                        //boss攻击力
+                        int bossAtkMin = 7, bossAtkMax = 13;
+                        //血量
+                        int bossHp = 100;
+                        //boss图标
+                        string bossIcon = "■";
+                        //boss颜色
+                        ConsoleColor bossColor = ConsoleColor.Green;
+
+                        #endregion
 
             while (true)
             {
@@ -107,7 +134,7 @@ namespace 入门实践
                         }
                         break;
 
-                    #endregion
+                        #endregion
 
                     case 2:
                         Console.Clear();
@@ -141,31 +168,51 @@ namespace 入门实践
 
                         #endregion
 
-                        #region Boss属性相关
-
-                        //boss位置
-                        int bossX = 24, bossY = 15;
-                        //boss攻击力
-                        int bossAtkMin = 7, bossAtkMax = 13;
-                        //血量
-                        int bossHp = 100;
-                        //boss图标
-                        string bossIcon = "■";
-                        //boss颜色
-                        ConsoleColor bossColor = ConsoleColor.Green;
-
-                        #endregion
-
                         while (true)
                         {
                             if(bossHp > 0)
                             {
-                                //绘制boss图标
+                                //每帧检测boss血量，若大于0则绘制boss图标
                                 Console.SetCursorPosition(bossX, bossY);
                                 Console.ForegroundColor = bossColor;
                                 Console.Write(bossIcon);
                             }
 
+                            #region 玩家移动
+
+                            Console.ForegroundColor = HeroColor;
+                            Console.SetCursorPosition(HeroPosX, HeroPosY);
+                            Console.Write(playerIcon);
+
+                            moveInput = Console.ReadKey(true).KeyChar;
+                            LasPosX = HeroPosX;
+                            LasPosY = HeroPosY; 
+                            Console.SetCursorPosition(HeroPosX, HeroPosY);
+                            Console.Write("  ");
+
+                            switch (moveInput)
+                            {
+                                case 'w':
+                                case 'W':
+                                        HeroPosY--;
+                                        break;
+                                case 's':
+                                    case 'S':
+                                        HeroPosY++;
+                                        break;
+                                    case 'a':
+                                    case 'A':
+                                        HeroPosX-=2;
+                                        break;
+                                    case 'd':
+                                    case 'D':
+                                        HeroPosX+=2;
+                                        break;
+                                }
+                                HeroMoveBorder();
+                                AvoidBossPos();
+
+                            #endregion
                         }
                         break;
                     case 3:
@@ -196,7 +243,26 @@ namespace 入门实践
             //    Console.WriteLine("退出游戏");
             //}
             #endregion
-
+            //主角移动边界控制
+            void HeroMoveBorder()
+            {
+                if (HeroPosX < 2)
+                    HeroPosX = 2;
+                else if (HeroPosX > 46)
+                    HeroPosX = 46;
+                if (HeroPosY < 1)
+                    HeroPosY = 1;
+                else if (HeroPosY > 23)
+                    HeroPosY = 23;
+            }
+            void AvoidBossPos()
+            {
+                if (HeroPosX == bossX && HeroPosY == bossY & bossHp > 0)
+                {
+                    HeroPosX = LasPosX;
+                    HeroPosY = LasPosY;
+                }
+            }
 
             #endregion
         }
