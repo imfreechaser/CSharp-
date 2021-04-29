@@ -1,31 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RayData\\source\\repos\\CSharp-Practice\\必备知识点_随机数\\必备知识点_随机数.csproj": {}
+    "/Users/meiyiming/Code/csharp/CSharp-Practice/必备知识点_随机数/必备知识点_随机数.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RayData\\source\\repos\\CSharp-Practice\\必备知识点_随机数\\必备知识点_随机数.csproj": {
+    "/Users/meiyiming/Code/csharp/CSharp-Practice/必备知识点_随机数/必备知识点_随机数.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RayData\\source\\repos\\CSharp-Practice\\必备知识点_随机数\\必备知识点_随机数.csproj",
+        "projectUniqueName": "/Users/meiyiming/Code/csharp/CSharp-Practice/必备知识点_随机数/必备知识点_随机数.csproj",
         "projectName": "必备知识点_随机数",
-        "projectPath": "C:\\Users\\RayData\\source\\repos\\CSharp-Practice\\必备知识点_随机数\\必备知识点_随机数.csproj",
-        "packagesPath": "C:\\Users\\RayData\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RayData\\source\\repos\\CSharp-Practice\\必备知识点_随机数\\obj\\",
+        "projectPath": "/Users/meiyiming/Code/csharp/CSharp-Practice/必备知识点_随机数/必备知识点_随机数.csproj",
+        "packagesPath": "/Users/meiyiming/.nuget/packages/",
+        "outputPath": "/Users/meiyiming/Code/csharp/CSharp-Practice/必备知识点_随机数/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\RayData\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/meiyiming/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
