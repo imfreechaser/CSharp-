@@ -27,10 +27,11 @@ namespace 入门实践
 
             int playerAtkMin = 8;
             int playerAtkMax = 12;
-            int HeroPosX = 6, HeroPosY = 5;
+            int playerPosX = 6, playerPosY = 5;
             int playerHp = 100;
             string playerIcon = "●";
             char moveInput;
+            char atkInput;
             ConsoleColor HeroColor = ConsoleColor.Yellow;
             int LasPosX = 0, LasPosY = 0;
 
@@ -40,16 +41,16 @@ namespace 入门实践
 
             //boss位置
             int bossX = 24, bossY = 15;
-                        //boss攻击力
-                        int bossAtkMin = 7, bossAtkMax = 13;
-                        //血量
-                        int bossHp = 100;
-                        //boss图标
-                        string bossIcon = "■";
-                        //boss颜色
-                        ConsoleColor bossColor = ConsoleColor.Green;
+            //boss攻击力
+            int bossAtkMin = 7, bossAtkMax = 13;
+            //血量
+            int bossHp = 100;
+            //boss图标
+            string bossIcon = "■";
+            //boss颜色
+            ConsoleColor bossColor = ConsoleColor.Green;
 
-                        #endregion
+            #endregion
 
             while (true)
             {
@@ -177,41 +178,92 @@ namespace 入门实践
                                 Console.ForegroundColor = bossColor;
                                 Console.Write(bossIcon);
                             }
+                            else
+                            {
+                                Console.SetCursorPosition(bossX, bossY);
+                                Console.Write("  ");
+                            }
 
                             #region 玩家移动
 
                             Console.ForegroundColor = HeroColor;
-                            Console.SetCursorPosition(HeroPosX, HeroPosY);
+                            Console.SetCursorPosition(playerPosX, playerPosY);
                             Console.Write(playerIcon);
 
                             moveInput = Console.ReadKey(true).KeyChar;
-                            LasPosX = HeroPosX;
-                            LasPosY = HeroPosY; 
-                            Console.SetCursorPosition(HeroPosX, HeroPosY);
+                            LasPosX = playerPosX;
+                            LasPosY = playerPosY; 
+                            Console.SetCursorPosition(playerPosX, playerPosY);
                             Console.Write("  ");
 
                             switch (moveInput)
                             {
                                 case 'w':
                                 case 'W':
-                                        HeroPosY--;
+                                        playerPosY--;
                                         break;
                                 case 's':
                                     case 'S':
-                                        HeroPosY++;
+                                        playerPosY++;
                                         break;
                                     case 'a':
-                                    case 'A':
-                                        HeroPosX-=2;
+                                    case 'A': 
+                                        playerPosX-=2;
                                         break;
                                     case 'd':
                                     case 'D':
-                                        HeroPosX+=2;
+                                        playerPosX+=2;
                                         break;
-                                }
+                            }
                                 HeroMoveBorder();
                                 AvoidBossPos();
 
+                            #region 和boss战斗
+                            
+                            if(bossHp > 0 && 
+                              (playerPosX == bossX && (playerPosY == bossY - 1 || playerPosY == bossY + 1) ||
+                               playerPosY == bossY && (playerPosX == bossX - 2 || playerPosX == bossX + 2))) //判断攻击区域
+                            {
+                                //提示进入战斗模式，按键继续
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                Console.SetCursorPosition(2, height - 5);
+                                Console.Write("开始进入战斗！按J继续...");
+                                atkInput = Console.ReadKey(true).KeyChar;
+                                //
+                                while ((atkInput == 'j' || atkInput == 'J') && playerHp > 0 && bossHp > 0)
+                                {
+                                    //战斗开始
+                                    //主角攻击
+                                    Random playerAtkR = new Random();
+                                    int playerAtk = playerAtkR.Next(playerAtkMin, playerAtkMax + 1);//主角攻击力
+                                    bossHp -= playerAtk;//boss剩余血量
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.SetCursorPosition(2, height - 4);
+                                    Console.Write("                                              ");
+                                    Console.SetCursorPosition(2, height - 4);
+                                    Console.Write("主角攻击boss，boss掉了{0}滴血！boss剩余血量：{1}",playerAtk, bossHp);
+                                    //boss攻击
+                                    playerAtk = playerAtkR.Next(bossAtkMin, bossAtkMax + 1);//boss攻击力
+                                    playerHp -= playerAtk;//主角剩余血量
+                                    Console.ForegroundColor = ConsoleColor.Yellow;
+                                    Console.SetCursorPosition(2, height - 3);
+                                    Console.Write("                                              ");
+                                    Console.SetCursorPosition(2, height - 3);
+                                    Console.Write("boss攻击主角，主角掉了{0}滴血！主角剩余血量：{1}", playerAtk, playerHp);
+                                    //
+                                    atkInput = Console.ReadKey(true).KeyChar;
+                                }
+                                if(playerHp <= 0)
+                                {
+                                    instantSceneID = 3;
+                                    break;
+                                }
+                                if(bossHp <= 0)
+                                {
+
+                                }
+                            }
+                            #endregion
                             #endregion
                         }
                         break;
@@ -246,21 +298,21 @@ namespace 入门实践
             //主角移动边界控制
             void HeroMoveBorder()
             {
-                if (HeroPosX < 2)
-                    HeroPosX = 2;
-                else if (HeroPosX > 46)
-                    HeroPosX = 46;
-                if (HeroPosY < 1)
-                    HeroPosY = 1;
-                else if (HeroPosY > 23)
-                    HeroPosY = 23;
+                if (playerPosX < 2)
+                    playerPosX = 2;
+                else if (playerPosX > 46)
+                    playerPosX = 46;
+                if (playerPosY < 1)
+                    playerPosY = 1;
+                else if (playerPosY > 23)
+                    playerPosY = 23;
             }
             void AvoidBossPos()
             {
-                if (HeroPosX == bossX && HeroPosY == bossY & bossHp > 0)
+                if (playerPosX == bossX && playerPosY == bossY & bossHp > 0)
                 {
-                    HeroPosX = LasPosX;
-                    HeroPosY = LasPosY;
+                    playerPosX = LasPosX;
+                    playerPosY = LasPosY;
                 }
             }
 
