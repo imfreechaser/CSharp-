@@ -6,7 +6,6 @@ namespace 必备知识点_随机数
     {
         static void Main(string[] args)
         {
-            // test
             Random attackAmount = new Random();
             int tangAttack = 0;
             int hpLost = 0;
