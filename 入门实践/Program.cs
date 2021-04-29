@@ -22,11 +22,13 @@ namespace 入门实践
             char inputDirection;
             int buttonId = 0;
             bool isQuit = false;
+            //游戏场景
+            bool isOver = false;
 
             #region 玩家属性相关
 
             int playerAtkMin = 8;
-            int playerAtkMax = 12;
+            int playerAtkMax = 13;
             int playerPosX = 6, playerPosY = 5;
             int playerHp = 100;
             string playerIcon = "●";
@@ -60,6 +62,7 @@ namespace 入门实践
                         Console.Clear();
                         //游戏标题
                         Console.SetCursorPosition(width / 2 - 7, 7);
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine("唐老师营救公主");
                         //开始场景逻辑搭建
                         #region 自己的实现方法
@@ -169,54 +172,15 @@ namespace 入门实践
 
                         #endregion
 
-                        while (true)
+                        while (true)                //游戏场景大循环
                         {
-                            if(bossHp > 0)
-                            {
-                                //每帧检测boss血量，若大于0则绘制boss图标
-                                Console.SetCursorPosition(bossX, bossY);
-                                Console.ForegroundColor = bossColor;
-                                Console.Write(bossIcon);
-                            }
-                            else
-                            {
-                                Console.SetCursorPosition(bossX, bossY);
-                                Console.Write("  ");
-                            }
-
                             #region 玩家移动
 
+                            //绘制玩家
                             Console.ForegroundColor = HeroColor;
                             Console.SetCursorPosition(playerPosX, playerPosY);
                             Console.Write(playerIcon);
-
-                            moveInput = Console.ReadKey(true).KeyChar;
-                            LasPosX = playerPosX;
-                            LasPosY = playerPosY; 
-                            Console.SetCursorPosition(playerPosX, playerPosY);
-                            Console.Write("  ");
-
-                            switch (moveInput)
-                            {
-                                case 'w':
-                                case 'W':
-                                        playerPosY--;
-                                        break;
-                                case 's':
-                                    case 'S':
-                                        playerPosY++;
-                                        break;
-                                    case 'a':
-                                    case 'A': 
-                                        playerPosX-=2;
-                                        break;
-                                    case 'd':
-                                    case 'D':
-                                        playerPosX+=2;
-                                        break;
-                            }
-                                HeroMoveBorder();
-                                AvoidBossPos();
+                            //
 
                             #region 和boss战斗
                             
@@ -228,42 +192,127 @@ namespace 入门实践
                                 Console.ForegroundColor = ConsoleColor.Green;
                                 Console.SetCursorPosition(2, height - 5);
                                 Console.Write("开始进入战斗！按J继续...");
-                                atkInput = Console.ReadKey(true).KeyChar;
                                 //
-                                while ((atkInput == 'j' || atkInput == 'J') && playerHp > 0 && bossHp > 0)
+                                while (playerHp > 0 && bossHp > 0)
                                 {
-                                    //战斗开始
-                                    //主角攻击
-                                    Random playerAtkR = new Random();
-                                    int playerAtk = playerAtkR.Next(playerAtkMin, playerAtkMax + 1);//主角攻击力
-                                    bossHp -= playerAtk;//boss剩余血量
-                                    Console.ForegroundColor = ConsoleColor.Green;
-                                    Console.SetCursorPosition(2, height - 4);
-                                    Console.Write("                                              ");
-                                    Console.SetCursorPosition(2, height - 4);
-                                    Console.Write("主角攻击boss，boss掉了{0}滴血！boss剩余血量：{1}",playerAtk, bossHp);
-                                    //boss攻击
-                                    playerAtk = playerAtkR.Next(bossAtkMin, bossAtkMax + 1);//boss攻击力
-                                    playerHp -= playerAtk;//主角剩余血量
-                                    Console.ForegroundColor = ConsoleColor.Yellow;
-                                    Console.SetCursorPosition(2, height - 3);
-                                    Console.Write("                                              ");
-                                    Console.SetCursorPosition(2, height - 3);
-                                    Console.Write("boss攻击主角，主角掉了{0}滴血！主角剩余血量：{1}", playerAtk, playerHp);
-                                    //
                                     atkInput = Console.ReadKey(true).KeyChar;
+                                    if(atkInput == 'j' || atkInput == 'J')
+                                    {
+                                        //战斗开始
+                                        //主角攻击
+                                        Random playerAtkR = new Random();
+                                        int playerAtk = playerAtkR.Next(playerAtkMin, playerAtkMax + 1);//主角攻击力
+                                        bossHp -= playerAtk;//boss剩余血量
+
+                                        Console.ForegroundColor = ConsoleColor.Green;
+                                        Console.SetCursorPosition(2, height - 4);
+                                        Console.Write("                                              ");
+                                        Console.SetCursorPosition(2, height - 4);
+                                        if (bossHp > 0)
+                                            Console.Write("主角攻击boss，boss掉了{0}滴血！boss剩余血量：{1}", playerAtk, bossHp);
+                                        else
+                                        {
+                                            Console.SetCursorPosition(bossX, bossY);
+                                            Console.Write("  ");
+                                            Console.SetCursorPosition(2, height - 5);
+                                            Console.Write("                                              ");
+                                            Console.SetCursorPosition(2, height - 5);
+                                            Console.Write("恭喜你战胜了boss！快去营救公主！");
+                                            Console.SetCursorPosition(2, height - 4);
+                                            Console.Write("                                              ");
+                                            Console.SetCursorPosition(2, height - 4);
+                                            Console.Write("按J继续...");
+                                            Console.SetCursorPosition(2, height - 3);
+                                            Console.Write("                                              ");
+
+                                            int exitInput = Console.ReadKey(true).KeyChar;
+                                            if (exitInput == 'j' || exitInput == 'J')
+                                                break;
+                                        }
+
+                                        //boss攻击
+                                        playerAtk = playerAtkR.Next(bossAtkMin, bossAtkMax + 1);//boss攻击力
+                                        playerHp -= playerAtk;//主角剩余血量
+
+                                        Console.ForegroundColor = ConsoleColor.Yellow;
+                                        Console.SetCursorPosition(2, height - 3);
+                                        Console.Write("                                              ");
+                                        Console.SetCursorPosition(2, height - 3);
+                                        if (playerHp > 0)
+                                            Console.Write("boss攻击主角，主角掉了{0}滴血！主角剩余血量：{1}", playerAtk, playerHp);
+                                        else
+                                        {
+                                            Console.SetCursorPosition(playerPosX, playerPosY);
+                                            Console.Write("  ");
+                                            Console.SetCursorPosition(2, height - 5);
+                                            Console.Write("                                              ");
+                                            Console.SetCursorPosition(2, height - 5);
+                                            Console.Write("很遗憾你战败了！");
+                                            Console.SetCursorPosition(2, height - 4);
+                                            Console.Write("                                              ");
+                                            Console.SetCursorPosition(2, height - 4);
+                                            Console.Write("按J继续...");
+                                            Console.SetCursorPosition(2, height - 3);
+                                            Console.Write("                                              ");
+
+                                            int exitInput = Console.ReadKey(true).KeyChar;
+                                            if (exitInput == 'j' || exitInput == 'J')
+                                                break;
+                                        }
+                                    }
                                 }
                                 if(playerHp <= 0)
                                 {
                                     instantSceneID = 3;
+                                    isOver = true;
                                     break;
                                 }
-                                if(bossHp <= 0)
-                                {
-
-                                }
                             }
+
+                            if (isOver)
+                                break;
                             #endregion
+
+                            if (bossHp > 0)
+                            {
+                                //每帧检测boss血量，若大于0则绘制boss图标
+                                Console.SetCursorPosition(bossX, bossY);
+                                Console.ForegroundColor = bossColor;
+                                Console.Write(bossIcon);
+                            }
+
+                            //检测输入、擦除上一帧玩家
+                            moveInput = Console.ReadKey(true).KeyChar;
+                            LasPosX = playerPosX;
+                            LasPosY = playerPosY; 
+                            Console.SetCursorPosition(playerPosX, playerPosY);
+                            Console.Write("  ");
+
+                            //改变玩家位置XY
+                            switch (moveInput)
+                            {
+                                case 'w':
+                                case 'W':
+                                    playerPosY--;
+                                    break;
+                                case 's':
+                                case 'S':
+                                    playerPosY++;
+                                    break;
+                                case 'a':
+                                case 'A': 
+                                    playerPosX-=2;
+                                    break;
+                                case 'd':
+                                case 'D':
+                                    playerPosX+=2;
+                                    break;
+                            }
+                            //检测位置是否合规
+                                HeroMoveBorder();
+                                AvoidBossPos();
+
+                            
                             #endregion
                         }
                         break;
