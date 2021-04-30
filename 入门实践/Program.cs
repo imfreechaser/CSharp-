@@ -21,56 +21,30 @@ namespace 入门实践
             //开始场景
             char inputDirection;
             int buttonId = 0;
-            bool isQuit = false;
+            bool isQuit;
             //游戏场景
             bool isOver = false;
+            bool WinTheGame = false;
+            //结束场景
+            bool backToBegin = false;
 
-            #region 玩家属性相关
-
-            int playerAtkMin = 8;
-            int playerAtkMax = 13;
-            int playerPosX = 6, playerPosY = 5;
-            int playerHp = 100;
-            string playerIcon = "●";
-            char moveInput;
-            char atkInput;
-            ConsoleColor HeroColor = ConsoleColor.Yellow;
-            int LasPosX = 0, LasPosY = 0;
-
-            #endregion
-
-            #region Boss属性相关
-
-            //boss位置
-            int bossX = 24, bossY = 15;
-            //boss攻击力
-            int bossAtkMin = 7, bossAtkMax = 13;
-            //血量
-            int bossHp = 100;
-            //boss图标
-            string bossIcon = "■";
-            //boss颜色
-            ConsoleColor bossColor = ConsoleColor.Green;
-
-            #endregion
-
-            #region 公主属性相关
-
-            ConsoleColor princessColor = ConsoleColor.Blue;
-            string princessIcon = "★";
-            int princessX = 36, princessY = 5;
-
-            #endregion
             while (true)
             {
                 switch (instantSceneID)
                 {
                     case 1:
                         Console.Clear();
+                        //场景逻辑初始化
+                        isQuit = false;
+                        isOver = false;
+                        WinTheGame = false;
+                        backToBegin = false;
+                        //
                         //游戏标题
                         Console.SetCursorPosition(width / 2 - 7, 7);
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.WriteLine("唐老师营救公主");
+                        Console.WriteLine("菁崽营救公主");
+                        buttonId = 0;
                         //开始场景逻辑搭建
                         #region 自己的实现方法
                         //startSceneStatus1();
@@ -179,6 +153,43 @@ namespace 入门实践
 
                         #endregion
 
+                        #region 玩家属性相关
+
+                        int playerAtkMin = 8;
+                        int playerAtkMax = 13;
+                        int playerPosX = 6, playerPosY = 5;
+                        int playerHp = 100;
+                        string playerIcon = "●";
+                        char moveInput;
+                        char atkInput;
+                        ConsoleColor HeroColor = ConsoleColor.Yellow;
+                        int LasPosX = 0, LasPosY = 0;
+
+                        #endregion
+
+                        #region Boss属性相关
+
+                        //boss位置
+                        int bossX = 24, bossY = 15;
+                        //boss攻击力
+                        int bossAtkMin = 7, bossAtkMax = 13;
+                        //血量
+                        int bossHp = 100;
+                        //boss图标
+                        string bossIcon = "■";
+                        //boss颜色
+                        ConsoleColor bossColor = ConsoleColor.Green;
+
+                        #endregion
+
+                        #region 公主属性相关
+
+                        ConsoleColor princessColor = ConsoleColor.Blue;
+                        string princessIcon = "★";
+                        int princessX = 36, princessY = 5;
+
+                        #endregion
+
                         while (true)                //游戏场景大循环
                         {
                             #region 玩家移动
@@ -233,6 +244,7 @@ namespace 入门实践
                                             Console.Write("                                              ");
 
                                             Console.ReadKey(true);
+                                            WinTheGame = true;
                                             break;
                                         }
 
@@ -370,13 +382,87 @@ namespace 入门实践
 
                             #endregion
                         }
+
+                        //主角移动边界控制
+                        void HeroMoveBorder()
+                        {
+                            if (playerPosX < 2)
+                                playerPosX = 2;
+                            else if (playerPosX > 46)
+                                playerPosX = 46;
+                            if (playerPosY < 1)
+                                playerPosY = 1;
+                            else if (playerPosY > 23)
+                                playerPosY = 23;
+                        }
+                        void AvoidBossPos()
+                        {
+                            if (playerPosX == bossX && playerPosY == bossY & bossHp > 0)
+                            {
+                                playerPosX = LasPosX;
+                                playerPosY = LasPosY;
+                            }
+                        }
+                        void AvoidPrincess()
+                        {
+                            if (playerPosX == princessX && playerPosY == princessY & bossHp <= 0)
+                            {
+                                playerPosX = LasPosX;
+                                playerPosY = LasPosY;
+                            }
+                        }
+
                         break;
                     case 3:
                         Console.Clear();
-                        Console.WriteLine("结束场景");
+                        //标题
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.SetCursorPosition(width / 2 - 4, 7);
+                        Console.Write("GameOver");
+                        //可变标题
+                        Console.SetCursorPosition(width / 2 - 4, 8);
+                        Console.Write(WinTheGame? "英雄救美":"惨遭屠杀");
+                        buttonId = 0;
+                        while (true)
+                        {
+                            Console.SetCursorPosition(width / 2 - 6, 10);
+                            Console.ForegroundColor = buttonId == 0 ? ConsoleColor.Red : ConsoleColor.White;
+                            Console.Write("回到开始界面");
+
+                            Console.SetCursorPosition(width / 2 - 4, 12);
+                            Console.ForegroundColor = buttonId == 1 ? ConsoleColor.Red : ConsoleColor.White;
+                            Console.Write("退出游戏");
+
+                            inputDirection = Console.ReadKey(true).KeyChar;
+                            switch (inputDirection)
+                            {
+                                case 'w':
+                                case 'W':
+                                    //buttonId--;
+                                    buttonId = --buttonId < 0 ? 0 : buttonId;
+                                    break;
+                                case 's':
+                                case 'S':
+                                    buttonId = ++buttonId > 1 ? 1 : buttonId;
+                                    break;
+                                case ' ':
+                                    if(buttonId == 0)
+                                    {
+                                        instantSceneID = 1;
+                                        backToBegin = true;
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        Environment.Exit(0);
+                                    }
+                                    break; 
+                            }
+                            if (backToBegin)
+                                break;
+                        }
                         break;
                 }
-            }
             #region 开始场景文字颜色状态方法（自己方法）
             //void startSceneStatus1()
             //{
@@ -399,35 +485,9 @@ namespace 入门实践
             //    Console.WriteLine("退出游戏");
             //}
             #endregion
-            //主角移动边界控制
-            void HeroMoveBorder()
-            {
-                if (playerPosX < 2)
-                    playerPosX = 2;
-                else if (playerPosX > 46)
-                    playerPosX = 46;
-                if (playerPosY < 1)
-                    playerPosY = 1;
-                else if (playerPosY > 23)
-                    playerPosY = 23;
-            }
-            void AvoidBossPos()
-            {
-                if (playerPosX == bossX && playerPosY == bossY & bossHp > 0)
-                {
-                    playerPosX = LasPosX;
-                    playerPosY = LasPosY;
-                }
-            }
-            void AvoidPrincess()
-            {
-                if (playerPosX == princessX && playerPosY == princessY & bossHp <= 0)
-                {
-                    playerPosX = LasPosX;
-                    playerPosY = LasPosY;
-                }
-            }
+
             #endregion
+            }
         }
     }
 }
