@@ -54,6 +54,13 @@ namespace 入门实践
 
             #endregion
 
+            #region 公主属性相关
+
+            ConsoleColor princessColor = ConsoleColor.Blue;
+            string princessIcon = "★";
+            int princessX = 36, princessY = 5;
+
+            #endregion
             while (true)
             {
                 switch (instantSceneID)
@@ -221,43 +228,46 @@ namespace 入门实践
                                             Console.SetCursorPosition(2, height - 4);
                                             Console.Write("                                              ");
                                             Console.SetCursorPosition(2, height - 4);
-                                            Console.Write("按J继续...");
+                                            Console.Write("按任意键继续...");
                                             Console.SetCursorPosition(2, height - 3);
                                             Console.Write("                                              ");
 
-                                            int exitInput = Console.ReadKey(true).KeyChar;
-                                            if (exitInput == 'j' || exitInput == 'J')
-                                                break;
+                                            Console.ReadKey(true);
+                                            break;
                                         }
 
                                         //boss攻击
-                                        playerAtk = playerAtkR.Next(bossAtkMin, bossAtkMax + 1);//boss攻击力
-                                        playerHp -= playerAtk;//主角剩余血量
-
-                                        Console.ForegroundColor = ConsoleColor.Yellow;
-                                        Console.SetCursorPosition(2, height - 3);
-                                        Console.Write("                                              ");
-                                        Console.SetCursorPosition(2, height - 3);
-                                        if (playerHp > 0)
-                                            Console.Write("boss攻击主角，主角掉了{0}滴血！主角剩余血量：{1}", playerAtk, playerHp);
-                                        else
+                                        if (bossHp > 0)
                                         {
-                                            Console.SetCursorPosition(playerPosX, playerPosY);
-                                            Console.Write("  ");
-                                            Console.SetCursorPosition(2, height - 5);
-                                            Console.Write("                                              ");
-                                            Console.SetCursorPosition(2, height - 5);
-                                            Console.Write("很遗憾你战败了！");
-                                            Console.SetCursorPosition(2, height - 4);
-                                            Console.Write("                                              ");
-                                            Console.SetCursorPosition(2, height - 4);
-                                            Console.Write("按J继续...");
+                                            playerAtk = playerAtkR.Next(bossAtkMin, bossAtkMax + 1);//boss攻击力
+                                            playerHp -= playerAtk;//主角剩余血量
+
+                                            Console.ForegroundColor = ConsoleColor.Yellow;
                                             Console.SetCursorPosition(2, height - 3);
                                             Console.Write("                                              ");
+                                            Console.SetCursorPosition(2, height - 3);
+                                            if (playerHp > 0)
+                                                Console.Write("boss攻击主角，主角掉了{0}滴血！主角剩余血量：{1}", playerAtk, playerHp);
+                                            else
+                                            {
+                                                Console.SetCursorPosition(playerPosX, playerPosY);
+                                                Console.Write("  ");
+                                                Console.SetCursorPosition(2, height - 5);
+                                                Console.Write("                                              ");
+                                                Console.SetCursorPosition(2, height - 5);
+                                                Console.Write("很遗憾你战败了！");
+                                                Console.SetCursorPosition(2, height - 4);
+                                                Console.Write("                                              ");
+                                                Console.SetCursorPosition(2, height - 4);
+                                                Console.Write("按J继续...");
+                                                Console.SetCursorPosition(2, height - 3);
+                                                Console.Write("                                              ");
 
-                                            int exitInput = Console.ReadKey(true).KeyChar;
-                                            if (exitInput == 'j' || exitInput == 'J')
-                                                break;
+                                                int exitInput = Console.ReadKey(true).KeyChar;
+                                                if (exitInput == 'j' || exitInput == 'J')
+                                                    break;
+                                            }
+                                        
                                         }
                                     }
                                 }
@@ -268,7 +278,7 @@ namespace 入门实践
                                     break;
                                 }
                             }
-
+                            
                             if (isOver)
                                 break;
                             #endregion
@@ -280,6 +290,50 @@ namespace 入门实践
                                 Console.ForegroundColor = bossColor;
                                 Console.Write(bossIcon);
                             }
+                            else
+                            {
+                                //画出公主
+                                Console.ForegroundColor = princessColor;
+                                Console.SetCursorPosition(princessX, princessY);
+                                Console.Write(princessIcon);
+                                //擦除之前显示的文字
+                                Console.SetCursorPosition(2,height - 5);
+                                Console.Write("                                              ");
+                                Console.SetCursorPosition(2, height - 4);
+                                Console.Write("                                              ");
+                            }
+
+                            #region 营救公主
+
+                            if (bossHp <= 0 &&
+                              (playerPosX == princessX && (playerPosY == princessY - 1 || playerPosY == princessY + 1) ||
+                               playerPosY == princessY && (playerPosX == princessX - 2 || playerPosX == princessX + 2)))
+                            {
+                                //提示营救公主信息
+                                Console.SetCursorPosition(2, height - 5);
+                                Console.Write("按J键营救公主！");
+                                while (true)
+                                {
+                                    int savePrinInput = Console.ReadKey(true).KeyChar;
+                                    if (savePrinInput == 'J' || savePrinInput == 'j')
+                                    {
+                                        Console.SetCursorPosition(2, height - 5);
+                                        Console.Write("                                              ");
+                                        Console.SetCursorPosition(2, height - 5);
+                                        Console.Write("营救公主成功！");
+                                        Console.SetCursorPosition(2, height - 4);
+                                        Console.Write("按任意键继续...");
+                                        Console.ReadKey(true);
+                                        instantSceneID = 3;
+                                        isOver = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (isOver)
+                                break;
+
+                            #endregion
 
                             //检测输入、擦除上一帧玩家
                             moveInput = Console.ReadKey(true).KeyChar;
@@ -309,10 +363,11 @@ namespace 入门实践
                                     break;
                             }
                             //检测位置是否合规
-                                HeroMoveBorder();
-                                AvoidBossPos();
+                            HeroMoveBorder();
+                            AvoidBossPos();
+                            AvoidPrincess();
 
-                            
+
                             #endregion
                         }
                         break;
@@ -364,7 +419,14 @@ namespace 入门实践
                     playerPosY = LasPosY;
                 }
             }
-
+            void AvoidPrincess()
+            {
+                if (playerPosX == princessX && playerPosY == princessY & bossHp <= 0)
+                {
+                    playerPosX = LasPosX;
+                    playerPosY = LasPosY;
+                }
+            }
             #endregion
         }
     }
