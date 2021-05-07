@@ -10,3 +10,4 @@ C:\Users\Erina\source\repos\CSharp-Practice\lesson1_枚举\obj\Debug\netcoreapp3
 C:\Users\Erina\source\repos\CSharp-Practice\lesson1_枚举\obj\Debug\netcoreapp3.1\lesson1_枚举.dll
 C:\Users\Erina\source\repos\CSharp-Practice\lesson1_枚举\obj\Debug\netcoreapp3.1\lesson1_枚举.pdb
 C:\Users\Erina\source\repos\CSharp-Practice\lesson1_枚举\obj\Debug\netcoreapp3.1\lesson1_枚举.genruntimeconfig.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson1_枚举\obj\Debug\netcoreapp3.1\lesson1_枚举.csprojAssemblyReference.cache
