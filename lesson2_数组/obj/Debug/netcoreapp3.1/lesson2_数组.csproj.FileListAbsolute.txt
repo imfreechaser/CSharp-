@@ -1,0 +1,13 @@
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\bin\Debug\netcoreapp3.1\lesson2_数组.exe
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\bin\Debug\netcoreapp3.1\lesson2_数组.deps.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\bin\Debug\netcoreapp3.1\lesson2_数组.runtimeconfig.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\bin\Debug\netcoreapp3.1\lesson2_数组.runtimeconfig.dev.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\bin\Debug\netcoreapp3.1\lesson2_数组.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\bin\Debug\netcoreapp3.1\lesson2_数组.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\obj\Debug\netcoreapp3.1\lesson2_数组.csprojAssemblyReference.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\obj\Debug\netcoreapp3.1\lesson2_数组.AssemblyInfoInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\obj\Debug\netcoreapp3.1\lesson2_数组.AssemblyInfo.cs
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\obj\Debug\netcoreapp3.1\lesson2_数组.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\obj\Debug\netcoreapp3.1\lesson2_数组.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\obj\Debug\netcoreapp3.1\lesson2_数组.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson2_数组\obj\Debug\netcoreapp3.1\lesson2_数组.genruntimeconfig.cache
