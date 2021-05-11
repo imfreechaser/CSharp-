@@ -10,3 +10,16 @@ C:\Users\RayData\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\net
 C:\Users\RayData\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\netcoreapp3.1\lesson3_二维数组.dll
 C:\Users\RayData\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\netcoreapp3.1\lesson3_二维数组.pdb
 C:\Users\RayData\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\netcoreapp3.1\lesson3_二维数组.genruntimeconfig.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\bin\Debug\netcoreapp3.1\lesson3_二维数组.exe
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\bin\Debug\netcoreapp3.1\lesson3_二维数组.deps.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\bin\Debug\netcoreapp3.1\lesson3_二维数组.runtimeconfig.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\bin\Debug\netcoreapp3.1\lesson3_二维数组.runtimeconfig.dev.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\bin\Debug\netcoreapp3.1\lesson3_二维数组.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\bin\Debug\netcoreapp3.1\lesson3_二维数组.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\netcoreapp3.1\lesson3_二维数组.csprojAssemblyReference.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\netcoreapp3.1\lesson3_二维数组.AssemblyInfoInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\netcoreapp3.1\lesson3_二维数组.AssemblyInfo.cs
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\netcoreapp3.1\lesson3_二维数组.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\netcoreapp3.1\lesson3_二维数组.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\netcoreapp3.1\lesson3_二维数组.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson3_二维数组\obj\Debug\netcoreapp3.1\lesson3_二维数组.genruntimeconfig.cache
