@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "入门实践", "入门实�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson1_枚举", "lesson1_枚举\lesson1_枚举.csproj", "{011F0EFD-E201-4734-BED0-26B110E18B85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson2_数组", "lesson2_数组\lesson2_数组.csproj", "{DCA1086E-306E-47AD-A373-CD59AB358337}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson2_数组", "lesson2_数组\lesson2_数组.csproj", "{DCA1086E-306E-47AD-A373-CD59AB358337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson3_二维数组", "lesson3_二维数组\lesson3_二维数组.csproj", "{C2AAC048-4150-4424-850E-A2B68AE1CA07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{DCA1086E-306E-47AD-A373-CD59AB358337}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCA1086E-306E-47AD-A373-CD59AB358337}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCA1086E-306E-47AD-A373-CD59AB358337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2AAC048-4150-4424-850E-A2B68AE1CA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2AAC048-4150-4424-850E-A2B68AE1CA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2AAC048-4150-4424-850E-A2B68AE1CA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2AAC048-4150-4424-850E-A2B68AE1CA07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
