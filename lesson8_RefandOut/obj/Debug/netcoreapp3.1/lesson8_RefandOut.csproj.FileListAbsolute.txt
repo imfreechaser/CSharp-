@@ -1,0 +1,12 @@
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\bin\Debug\netcoreapp3.1\lesson8_RefandOut.exe
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\bin\Debug\netcoreapp3.1\lesson8_RefandOut.deps.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\bin\Debug\netcoreapp3.1\lesson8_RefandOut.runtimeconfig.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\bin\Debug\netcoreapp3.1\lesson8_RefandOut.runtimeconfig.dev.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\bin\Debug\netcoreapp3.1\lesson8_RefandOut.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\bin\Debug\netcoreapp3.1\lesson8_RefandOut.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\obj\Debug\netcoreapp3.1\lesson8_RefandOut.AssemblyInfoInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\obj\Debug\netcoreapp3.1\lesson8_RefandOut.AssemblyInfo.cs
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\obj\Debug\netcoreapp3.1\lesson8_RefandOut.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\obj\Debug\netcoreapp3.1\lesson8_RefandOut.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\obj\Debug\netcoreapp3.1\lesson8_RefandOut.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson8_RefandOut\obj\Debug\netcoreapp3.1\lesson8_RefandOut.genruntimeconfig.cache

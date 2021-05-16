@@ -1,0 +1,13 @@
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\bin\Debug\netcoreapp3.1\lesson7_函数.exe
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\bin\Debug\netcoreapp3.1\lesson7_函数.deps.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\bin\Debug\netcoreapp3.1\lesson7_函数.runtimeconfig.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\bin\Debug\netcoreapp3.1\lesson7_函数.runtimeconfig.dev.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\bin\Debug\netcoreapp3.1\lesson7_函数.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\bin\Debug\netcoreapp3.1\lesson7_函数.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\obj\Debug\netcoreapp3.1\lesson7_函数.AssemblyInfoInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\obj\Debug\netcoreapp3.1\lesson7_函数.AssemblyInfo.cs
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\obj\Debug\netcoreapp3.1\lesson7_函数.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\obj\Debug\netcoreapp3.1\lesson7_函数.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\obj\Debug\netcoreapp3.1\lesson7_函数.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\obj\Debug\netcoreapp3.1\lesson7_函数.genruntimeconfig.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson7_函数\obj\Debug\netcoreapp3.1\lesson7_函数.csprojAssemblyReference.cache

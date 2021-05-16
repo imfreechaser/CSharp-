@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "lesson4_值类型引用类型/1.0.0": {
+        "runtime": {
+          "lesson4_值类型引用类型.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lesson4_值类型引用类型/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
