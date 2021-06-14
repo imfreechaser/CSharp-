@@ -1,0 +1,13 @@
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\bin\Debug\netcoreapp3.1\CSharp实践项目.exe
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\bin\Debug\netcoreapp3.1\CSharp实践项目.deps.json
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\bin\Debug\netcoreapp3.1\CSharp实践项目.runtimeconfig.json
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\bin\Debug\netcoreapp3.1\CSharp实践项目.runtimeconfig.dev.json
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\bin\Debug\netcoreapp3.1\CSharp实践项目.dll
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\bin\Debug\netcoreapp3.1\CSharp实践项目.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\obj\Debug\netcoreapp3.1\CSharp实践项目.AssemblyInfoInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\obj\Debug\netcoreapp3.1\CSharp实践项目.AssemblyInfo.cs
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\obj\Debug\netcoreapp3.1\CSharp实践项目.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\obj\Debug\netcoreapp3.1\CSharp实践项目.dll
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\obj\Debug\netcoreapp3.1\CSharp实践项目.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\obj\Debug\netcoreapp3.1\CSharp实践项目.genruntimeconfig.cache
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp实践项目\obj\Debug\netcoreapp3.1\CSharp实践项目.csprojAssemblyReference.cache
