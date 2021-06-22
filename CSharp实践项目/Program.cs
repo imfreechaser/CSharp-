@@ -228,6 +228,7 @@ namespace CSharp实践项目
                 switch (sceneType)
                 {
                     case E_SceneType.Begin:
+                        Console.Clear();
                         BeginScene(w,h,ref sceneType);
                         break;
                     case E_SceneType.Game:
@@ -237,8 +238,7 @@ namespace CSharp实践项目
                     case E_SceneType.End:
                         //结束场景循环
                         Console.Clear();
-                        Console.WriteLine("EndScene");
-                        Console.ReadLine();
+                        EndScene(w, h, ref sceneType);
                         break;
                     default:
                         break;
@@ -358,6 +358,58 @@ namespace CSharp实践项目
         }
         #endregion
 
+        #region 结束场景循环
+        static void EndScene(int width, int height, ref E_SceneType e_SceneType)
+        {
+            //设置标题
+            Console.SetCursorPosition(width / 2 - 2,height / 3 -3);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("游戏结束");
+
+            int btnId = 0;
+            bool quit = false;
+
+            while (true)
+            {
+                //回到主菜单
+                Console.SetCursorPosition(width / 2 - 3, height / 2 - 3);
+                Console.ForegroundColor = btnId == 0? ConsoleColor.Red: ConsoleColor.White;
+                Console.Write("回到主菜单");
+
+                //退出游戏
+                Console.SetCursorPosition(width / 2 - 2, height / 2 - 1);
+                Console.ForegroundColor = btnId == 1 ? ConsoleColor.Red : ConsoleColor.White;
+                Console.Write("退出游戏");
+
+                switch (Console.ReadKey(true).Key)
+                {
+                    case ConsoleKey.W:
+                        btnId--;
+                        if (btnId < 0)
+                            btnId = 0;
+                        break;
+                    case ConsoleKey.S:
+                        btnId++;
+                        if (btnId > 1)
+                            btnId = 1;
+                        break;
+                    case ConsoleKey.Enter:
+                        if (btnId == 0)
+                        {
+                            e_SceneType = 0;
+                            quit = true;
+                        }
+                        else
+                            Environment.Exit(0);
+                        break;
+                    default:
+                        break;
+                }
+                if (quit)
+                    break;
+            }
+        }
+        #endregion
         #region 不变的红墙
         static void BuildRedWall(int width, int height)
         {

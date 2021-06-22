@@ -1,0 +1,12 @@
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\bin\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.exe
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\bin\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.deps.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\bin\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.runtimeconfig.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\bin\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.runtimeconfig.dev.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\bin\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\bin\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\obj\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.AssemblyInfoInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\obj\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.AssemblyInfo.cs
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\obj\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\obj\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\obj\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson9_参数数组和可选参数\obj\Debug\netcoreapp3.1\lesson9_参数数组和可选参数.genruntimeconfig.cache

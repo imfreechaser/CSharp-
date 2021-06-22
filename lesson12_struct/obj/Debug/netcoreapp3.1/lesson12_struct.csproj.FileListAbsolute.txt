@@ -1,0 +1,13 @@
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\bin\Debug\netcoreapp3.1\lesson12_struct.exe
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\bin\Debug\netcoreapp3.1\lesson12_struct.deps.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\bin\Debug\netcoreapp3.1\lesson12_struct.runtimeconfig.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\bin\Debug\netcoreapp3.1\lesson12_struct.runtimeconfig.dev.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\bin\Debug\netcoreapp3.1\lesson12_struct.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\bin\Debug\netcoreapp3.1\lesson12_struct.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\obj\Debug\netcoreapp3.1\lesson12_struct.csprojAssemblyReference.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\obj\Debug\netcoreapp3.1\lesson12_struct.AssemblyInfoInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\obj\Debug\netcoreapp3.1\lesson12_struct.AssemblyInfo.cs
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\obj\Debug\netcoreapp3.1\lesson12_struct.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\obj\Debug\netcoreapp3.1\lesson12_struct.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\obj\Debug\netcoreapp3.1\lesson12_struct.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson12_struct\obj\Debug\netcoreapp3.1\lesson12_struct.genruntimeconfig.cache

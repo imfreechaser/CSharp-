@@ -1,0 +1,6 @@
+C:\Users\Erina\source\repos\CSharp-Practice\Csharp实践小项目\bin\Debug\Csharp实践小项目.exe.config
+C:\Users\Erina\source\repos\CSharp-Practice\Csharp实践小项目\bin\Debug\Csharp实践小项目.exe
+C:\Users\Erina\source\repos\CSharp-Practice\Csharp实践小项目\bin\Debug\Csharp实践小项目.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\Csharp实践小项目\obj\Debug\Csharp实践小项目.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\Csharp实践小项目\obj\Debug\Csharp实践小项目.exe
+C:\Users\Erina\source\repos\CSharp-Practice\Csharp实践小项目\obj\Debug\Csharp实践小项目.pdb

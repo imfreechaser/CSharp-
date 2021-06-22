@@ -1,0 +1,13 @@
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\bin\Debug\netcoreapp3.1\lesson13_冒泡排序.exe
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\bin\Debug\netcoreapp3.1\lesson13_冒泡排序.deps.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\bin\Debug\netcoreapp3.1\lesson13_冒泡排序.runtimeconfig.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\bin\Debug\netcoreapp3.1\lesson13_冒泡排序.runtimeconfig.dev.json
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\bin\Debug\netcoreapp3.1\lesson13_冒泡排序.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\bin\Debug\netcoreapp3.1\lesson13_冒泡排序.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\obj\Debug\netcoreapp3.1\lesson13_冒泡排序.csprojAssemblyReference.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\obj\Debug\netcoreapp3.1\lesson13_冒泡排序.AssemblyInfoInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\obj\Debug\netcoreapp3.1\lesson13_冒泡排序.AssemblyInfo.cs
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\obj\Debug\netcoreapp3.1\lesson13_冒泡排序.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\obj\Debug\netcoreapp3.1\lesson13_冒泡排序.dll
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\obj\Debug\netcoreapp3.1\lesson13_冒泡排序.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\lesson13_冒泡排序\obj\Debug\netcoreapp3.1\lesson13_冒泡排序.genruntimeconfig.cache

@@ -1,0 +1,7 @@
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp基础实践小项目\bin\Debug\CSharp基础实践小项目.exe.config
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp基础实践小项目\bin\Debug\CSharp基础实践小项目.exe
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp基础实践小项目\bin\Debug\CSharp基础实践小项目.pdb
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp基础实践小项目\obj\Debug\CSharp基础实践小项目.csprojAssemblyReference.cache
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp基础实践小项目\obj\Debug\CSharp基础实践小项目.csproj.CoreCompileInputs.cache
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp基础实践小项目\obj\Debug\CSharp基础实践小项目.exe
+C:\Users\Erina\source\repos\CSharp-Practice\CSharp基础实践小项目\obj\Debug\CSharp基础实践小项目.pdb
